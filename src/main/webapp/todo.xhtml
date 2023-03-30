@@ -8,9 +8,11 @@
     </h:head>
     <h:body>
         <div>
-            <div>
-                List of TO-DO items
-            </div>
+            <h1>
+                <div>
+                    List of TO-DO items
+                </div>
+            </h1>
             <h:dataTable value="#{todoService.allTodo}" var="item">
                 <h:column>
                     <f:facet name="header"> Message</f:facet>
@@ -24,7 +26,9 @@
         </div>
         <div>
             <div>
+                <h3>
                 Add new to-do item:
+                </h3>
             </div>
             <h:form>
                 <h:outputLabel for="message" value="Message: "/>
